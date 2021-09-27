@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="homePageStyles.css">
+  <link rel="stylesheet" href="css/homePageStyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>CS 355 Home Page</title>
 </head>
 <body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="https://benkluger.github.io/resume.html">Resume</a>
+  <a href="https://benkluger.github.io/weather.html">Weather</a>
+<!--  <a href="#about">About</a>-->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
 <h1>This is my home page for CS 355</h1>
+
   <h2>To access my weather page, <a href="https://benkluger.github.io/weather.html">click here</a>.</h2>
   <h2>To access my resume page, <a href="https://benkluger.github.io/resume.html">click here</a>.</h2>
+
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 </body>
 </html>
